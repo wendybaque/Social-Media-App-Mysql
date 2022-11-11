@@ -20,14 +20,14 @@
         url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600")
           center;
       background-size: cover;
-      padding: 50px;
+      padding: 40px;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
       color: white;
 
       h1 {
-        font-size: 100px;
+        font-size: 50px;
         line-height: 100px;
       }
       
@@ -46,6 +46,7 @@
         color: rebeccapurple;
         font-weight: bold;
         cursor: pointer;
+        border-radius: 20px;
       }
     }
 
@@ -80,6 +81,7 @@
           color: white;
           font-weight: bold;
           cursor: pointer;
+          border-radius: 20px;
         }
       }
     }
