@@ -22,7 +22,9 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>Antiigone'social media</span>
         </Link>
-        <HomeOutlinedIcon />
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <HomeOutlinedIcon />
+        </Link>
         {darkMode ? (
           <WbSunnyOutlinedIcon onClick={toggle} />
         ) : (
@@ -39,11 +41,10 @@ const Navbar = () => {
         <EmailOutlinedIcon />
         <NotificationsOutlinedIcon />
         <div className="user">
-          <img
-            src={currentUser.profilePic}
-            alt=""
-          />
-          <span>{currentUser.name}</span>
+          <Link to="/profile/:id" style={{ textDecoration: "none" }}>
+            <img src={currentUser.profilePic} alt="" />
+            <span>{currentUser.name}</span>
+          </Link>
         </div>
       </div>
     </div>
