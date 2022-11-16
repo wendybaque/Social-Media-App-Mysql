@@ -24,7 +24,7 @@ const LeftBar = () => {
       <div className="container">
         <div className="menu">
           <div className="user">
-            <Link to="/profile/:id" style={{ textDecoration: "none" }}>
+            <Link to={`/profile/${currentUser}`} style={{ textDecoration: "none" }}>
               <img src={currentUser.profilePic} alt="" />
             </Link>
             <Link to="/profile/:id" style={{ textDecoration: "none" }}>
